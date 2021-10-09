@@ -1,0 +1,441 @@
+
+/************* For Main Page *************/
+
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 55%;
+    /*height: 600px;
+    background-color: chartreuse;*/
+}
+.text{
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    /*display: flex;*/
+    position: relative;
+}
+.text>h1{
+    color: grey;
+    font-family: 'Poiret One', cursive;
+    margin: 0px;
+}
+.todo{
+    font-size: 62px;
+    position: absolute;
+    left: 12px;
+    bottom: 0%;
+    font-weight: lighter;
+}
+.task{
+    font-weight: bold;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: .7;
+}
+
+.add{
+    font-size: 40px;
+    position: absolute;
+    right: 4%;
+    bottom: 12px;
+    font-weight: lighter;
+}
+.plus-btn{
+    color: #EE4B2B; 
+    font-size: 40px; 
+    display: none;
+}
+
+.cards{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.box{
+    width: 225px;
+    height: 350px;
+    margin-top: 24px;
+    background: white;
+    border-radius: 12px;
+    border: 2px solid #EE4B2B;
+    box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.932);
+}
+.hide{
+    display: none;
+}
+.trip{
+    text-align: center;
+    font-size: 32px;
+    color: #EE4B2B;
+    font-weight: 400;
+    font-family: 'Poiret One', cursive;
+    margin: 36px 0px 14px 0px;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.box>p{
+    width: 80%;
+    height: 1px;
+    /*display: inline-block;*/
+    float: right;
+    margin: 0%;
+    background-color: rosybrown;
+    /*margin: 6px 0px;*/
+}
+.completed{
+    font-size: 24px;
+    text-align: center;
+    clear: right;
+    margin-top: 52px;
+    padding-left: 24px;
+    color: red;
+    text-decoration: line-through 3px red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+}
+
+input[type='checkbox']{
+    width: 22px;
+    height: 20px;
+    margin-left: 16px;
+}
+label{
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    color: black;
+    opacity: .7;
+}
+
+/************** For Trip To Paris Page **************/
+
+/*.heading{
+    font-size: 64px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}*/
+.heading{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+}
+.heading>h1{
+    font-size: 64px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 24px;
+    margin-right: 24px;
+    opacity: .8;
+}
+.heading>p{
+    height: 1.5px;
+    font-weight: lighter;
+    background-color: grey;
+    width: 15%;
+    opacity: .8;
+}
+
+
+.back-btn{
+    text-align: center;
+    font-size: 32px;
+    color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    margin-top: 14px;
+}
+.display-btn{
+    display: none;
+    text-align: center;
+    font-size: 32px;
+    color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    margin-top: 14px;
+}
+
+.container-2{
+    width: 100%;
+}
+.box-2{
+    margin: 0px auto;
+    width: 445px;
+    height: 425px;
+    position: relative;
+    margin-top: 60px;
+    background: white;
+    border-radius: 12px;
+    border: 2px solid #EE4B2B;
+    box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.932);
+}
+.box-2>p{
+    width: 70%;
+    height: 1px;
+    /*display: inline-block;*/
+    float: right;
+    margin: 0%;
+    background-color: rosybrown;
+    /*margin: 6px 0px;*/
+}
+.trip-2{
+    text-align: center;
+    font-size: 32px;
+    color: #EE4B2B;
+    font-weight: 400;
+    font-family: 'Poiret One', cursive;
+    margin: 36px 0px 14px 0px;
+}
+.completed-2{
+    font-size: 24px;
+    text-align: center;
+    clear: right;
+    margin-top: 52px;
+    padding-left: 24px;
+    color: red;
+    text-decoration: line-through 3px red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+}
+.icon{
+    position: absolute;
+    bottom: 4%;
+    right: 4%;
+    font-size: 40px;
+    color: #EE4B2B;
+}
+
+/************** CSS for Add New List ***************/
+
+.new-list-main{
+    width: 425px;
+    height: 225px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 2px solid #EE4B2B;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.932);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.new-list-main>div{
+    width: 100%;
+}
+.new-list-main>div>h1{
+    margin-top: 0px;
+    color: #EE4B2B;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+input[type='text']{
+    width: 70%;
+    height: 35px;
+    border: 2px solid #EE4B2B;
+    border-radius: 6px;
+    box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.932);
+    margin-bottom: 24px;
+}
+.btn{
+    color: white;
+    background-color: #EE4B2B;
+    border-radius: 22px;
+    padding: 10px 22px;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+.blur-effect{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./images/background.png);
+    background-position: center;
+    background-size: cover;
+    filter: blur(10px);
+}
+.blur-effect-2{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./images/background2.png);
+    background-position: center;
+    background-size: cover;
+    filter: blur(10px);
+}
+
+
+
+/******************* Media Queries ************************/
+
+@media screen and (max-width:1300px) {
+    .container{
+        width: 70%;
+    }
+    .cards{
+        justify-content: space-around;
+    }    
+    .text{
+        margin: 0px auto;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:1050px) {
+    .container{
+        width: 85%;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .container{
+        width: 95%;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    
+    /********************* For Page 2  *************************/
+
+    .main{
+        height: 115vh;
+    }
+    .container{
+        width: 425px;
+    }
+    .text{
+        width: 80%;
+    }
+    .display-btn{
+        display: block;
+        margin-top: 32px;
+    }
+    .back-btn{
+        display: none;
+    }
+    .heading{
+        width: 100%;
+    }
+    .heading>p{
+        display: none;
+    }
+    .heading>h1{
+        font-size: 34px;
+        margin: 0px;
+    }
+    .box-2{
+        width: 260px;
+        height: 400px;
+        margin-top: 32px;
+    }
+
+    /***************** For Page 1 ****************/
+
+    
+    .cards{
+        flex-direction: column;
+        align-items: center;
+    }
+    .box{
+        width: 330px;
+        height: 75px;
+        margin-top: 24px;
+        border: 1px solid red;
+    }
+    .hide{
+        display: block;
+    }
+    .completed{
+        display: none;
+    }
+    .box>p{
+        display: none;
+    }
+    .box>input{
+        display: none;
+    }
+    .box>label{
+        display: none;
+    }
+    .trip{
+        margin-top: 22px;
+        padding-left: 24px;
+        text-align: left;
+        font-size: 24px;
+    }
+    .todo{
+        font-size: 44px;
+        left: 0%;
+    }
+    .add{
+        display: none;
+    }
+    .plus-btn{
+        display: inline;
+        position: absolute;
+        right: 0%;
+        bottom: 0%;
+    }
+
+}
+
+@media screen and (max-width:380px) {
+    .container{
+        width: 300px;
+    }
+    .text{
+        width: 90%;
+    }
+    .box{
+        width: 275px;
+        height: 60px;
+    }
+    .trip{
+        margin-top: 18px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .new-list-main{
+        width: 325px;
+        height: 185px;
+    }
+    .new-list-main>div>h1{
+        font-size: 22px;
+    }
+    .btn{
+        font-size: 14px;
+    }
+    .blur-effect{
+        background-image: url('./images/backround-for-mobile.png');
+    }
+    .blur-effect-2{
+        background-image: url('./images/background-for-mobile-2.png');
+    }
+}
+@media screen and (max-width:380px) {
+    .new-list-main{
+        width: 275px;
+        height: 160px;
+    }
+}
