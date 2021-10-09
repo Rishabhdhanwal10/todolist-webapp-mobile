@@ -400,6 +400,9 @@ input[type='text']{
 }
 
 @media screen and (max-width:380px) {
+    .main{
+        height: 100vh;
+    }
     .container{
         width: 300px;
     }
